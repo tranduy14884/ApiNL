@@ -1,0 +1,33 @@
+
+@baseUrl = http://localhost:3000/api
+
+# @name getAllProducts
+GET {{baseUrl}}/products
+
+###
+# @name addNewProducts 
+
+POST {{baseUrl}}/products
+Content-Type: application/json
+
+{
+    "name" : "Nguyen Trung Truc",
+    "categoryId" : 1,
+    "price" : 125000
+}
+
+###
+
+# @name updateProducts
+PATCH  {{baseUrl}}/products/4
+Content-Type: application/json
+
+{
+    "name" : "Tran Khanh Duy"
+}
+
+###
+
+# @name deleteProducts
+DELETE {{baseUrl}}/products/3
+

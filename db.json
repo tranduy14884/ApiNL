@@ -1,0 +1,101 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "abc",
+      "createAt": 1234567,
+      "updateAt": 1234568
+    },
+    {
+      "id": 2,
+      "name": "xyz",
+      "createAt": 2345678,
+      "updateAt": 2234569
+    },
+    {
+      "name": "aloalo",
+      "createdAt": 1618806753699,
+      "updatedAt": 1618806753699,
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Nguyen Xuan Phuc",
+      "createAt": 1234555,
+      "updateAt": 1235343,
+      "categoryId": 1,
+      "price": 100000
+    },
+    {
+      "id": 2,
+      "name": "Tran Thien Nhan Nghia",
+      "createAt": 1234556,
+      "updateAt": 1235347,
+      "categoryId": 1,
+      "price": 120000
+    },
+    {
+      "name": "Nguyen Trung Truc",
+      "categoryId": 1,
+      "price": 125000,
+      "createdAt": 1618798579727,
+      "updatedAt": 1618798579727,
+      "id": 3
+    },
+    {
+      "name": "Tran Khanh Duy",
+      "categoryId": "1",
+      "price": "1400000",
+      "createdAt": 1618806530062,
+      "updatedAt": 1618806530062,
+      "id": 4
+    },
+    {
+      "name": "anh duy",
+      "categotyId": "2",
+      "price": "1400000",
+      "createdAt": 1618829626450,
+      "updatedAt": 1618829626450,
+      "id": 5
+    },
+    {
+      "name": "Nguyen laptop",
+      "categoryId": 1,
+      "price": 175000,
+      "createdAt": 1618973318953,
+      "updatedAt": 1618973318953,
+      "id": 6
+    }
+  ],
+  "accounts": [
+    {
+      "username": "nguyen@gmail.com",
+      "email": "nguyen@gmail.com",
+      "provider": "local",
+      "confirmed": true,
+      "blocked": null,
+      "role": 1,
+      "password": "123456",
+      "id": 1,
+      "createdAt": 1618806700566,
+      "updatedAt": 1618806700566
+    },
+    {
+      "username": "nguyenguyen@gmail.com",
+      "password": "123456",
+      "email": "nguyenguyen@gmail.com",
+      "provider": "local",
+      "confirmed": true,
+      "blocked": null,
+      "role": 1,
+      "createdAt": 1618998658079,
+      "updatedAt": 1618998658079,
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "Duy Tran"
+  }
+}
