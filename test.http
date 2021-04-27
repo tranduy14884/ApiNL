@@ -2,7 +2,7 @@
 @baseUrl = http://localhost:3000/api
 
 # @name getAllProducts
-GET {{baseUrl}}/products
+GET {{baseUrl}}/accounts
 
 ###
 # @name addNewProducts 
@@ -11,10 +11,20 @@ POST {{baseUrl}}/products
 Content-Type: application/json
 
 {
-    "name" : "Nguyen Trung Truc",
+    "name" : "Nguyen laptop",
     "categoryId" : 1,
-    "price" : 125000
+    "price" : 175000
 }
+
+###
+POST {{baseUrl}}/accounts
+Content-Type: application/json
+
+{
+    "username" : "Nguyen laptop",
+    "password" : "123455"
+}
+
 
 ###
 
