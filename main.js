@@ -33,7 +33,9 @@ server.use((req, res, next) => {
 
 // });
 
-server.post("/api/accounts/register", (req, res) => {
+
+//REGISTER
+server.post("/api/auth/register", (req, res) => {
   //get data
   const useName = req.body.username;
   // res.jsonp(useName);
@@ -44,10 +46,11 @@ server.post("/api/accounts/register", (req, res) => {
       const checkUser = listData.find((item) => item.username === useName);
       // res.jsonp(checkUser);
       if (checkUser) {
-        res.status(500).json("Create account failed");
+        res.status(400).json({ error: 'Email is already taken !' });
       } else {
         // add data
         const data = {
+          name: req.body.fullName,
           username: req.body.username,
           password: req.body.password,
           email: req.body.email,
@@ -78,6 +81,39 @@ server.post("/api/accounts/register", (req, res) => {
       }
     });
 });
+
+//LOGIN
+server.post("/api/auth/login", (req, res) => {
+  //get data
+  const useMail = req.body.email;
+  const usePassword = req.body.password;
+  // res.jsonp(useName);
+  const urlGetApi = "http://localhost:3000/api/accounts";
+  fetch(urlGetApi)
+    .then((data) => data.json())
+    .then((listData) => {
+      const checkUser = listData.find((item) => {
+        return (item.email === useMail) && (item.password === usePassword)
+      });
+      // res.jsonp(checkUser);
+      if (checkUser) {
+        //get data to show
+        fetch(urlGetApi)
+          .then((todo) => todo.json())
+          .then((data) => {
+            const user = data.find(
+              (item) => item.email === useMail
+            );
+            const accessToken = jwt.sign(user,process.env.ACCESS_TOKEN_SECRET, {});
+            res.jsonp({ jwt: accessToken, user });
+          });
+      } else {
+        res.status(400).json({ error: 'Email or password are wrong!' });
+      }
+    });
+});
+
+
 
 // Use default router
 server.use("/api", router);
