@@ -64,6 +64,44 @@
       "number": 73
     }
   ],
+  "details": [
+    {
+      "id" : 1,
+      "productID" : 1,
+      "name" : "Khách sạn Imperial Nha Trang",
+      "location" : "20 Trần Phú, Vĩnh Nguyên, Thành phố Nha Trang, Khánh Hòa, Việt Nam",
+      "thumnailUrl1" : "https://i.vntrip.vn/471x290/smart/https://statics.vntrip.vn/data-v2/hotels/12536/img_max/12536_1529288074_6.jpg",
+      "thumnailUrl2" : "https://i.vntrip.vn/886x290/smart/https://statics.vntrip.vn/data-v2/hotels/12536/img_max/12536_1529288096_view_2.jpg",
+      "thumnailUrl3" : "https://i.vntrip.vn/584x290/smart/https://statics.vntrip.vn/data-v2/hotels/12536/img_max/12536_1528344605_deluxe_1.jpg",
+      "thumnailUrl4" : "https://i.vntrip.vn/275x140/smart/https://statics.vntrip.vn/data-v2/hotels/12536/img_max/12536_1528344910_sup_1.jpg",
+      "thumnailUrl5" : "https://i.vntrip.vn/275x140/smart/https://statics.vntrip.vn/data-v2/hotels/12536/img_max/12536_1529288096_view_1.jpg",
+      "thumnailUrl6" : "https://i.vntrip.vn/142x140/smart/https://statics.vntrip.vn/data-v2/hotels/12536/img_max/12536_1528346592_bathroom_2.jpg",
+      "thumnailUrl7" : "https://i.vntrip.vn/142x140/smart/https://statics.vntrip.vn/data-v2/hotels/12536/img_max/12536_1528344910_sup_5.jpg",
+      "description" : "Khách sạn Imperial nổi bật với sự hòa quyện hoàn hảo giữa lối kiến trúc cổ điển, sang trọng và phong cách phục vụ hiếu khách. Xây dựng 26 tầng gồm 143 phòng với trang thiết bị hiện đại đạt tiêu chuẩn 4 sao, thiết kế các phòng đều có cửa sổ, ban công hướng ra biển và thành phố tạo nên không gian hoàn hảo, nơi du khách có thể tận hưởng cuộc sống thanh bình, cũng như đắm chìm vào khung cảnh của bãi biển thơ mộng và lưu giữ những khoảnh khắc đẹp của ánh bình minh ngay chính tại căn phòng của mình.Nằm ở tầng 2 của khách sạn, nhà hàng Royal là nơi quý khách tận hưởng những bữa tiệc buffet hay món ăn tự chọn đa dạng mang phong cách đặc trưng vùng miền. Khách sạn còn có bể bơi ngoài trời trên cao hiện đại, nhân viên phục vụ chu đáo và vô cùng hiếu khách."
+    }
+  ]
+  ,
+  "rooms": [
+    {
+      "id" : 1,
+      "productId" : 1,
+      "name" : "Superior City View (Window)",
+      "number" : 1,
+      "oldPrice" : 850000,
+      "discount" : 0.4,
+      "thumnailUrl" : "https://statics2.vntrip.vn/165x165/data-v2/hotels/12536/img_max/12536_1528344910_sup_1.jpg"
+    },
+    {
+      "id" : 2,
+      "productId" : 1,
+      "name" : "Suite SeaView with Balcony",
+      "number" : 2,
+      "oldPrice" : 1500000,
+      "discount" : 0.4,
+      "thumnailUrl" : "https://statics2.vntrip.vn/165x165/data-v2/hotels/12536/img_max/12536_1611041843_suite1.jpg"
+    }
+  ]
+  ,
   "products": [
     {
       "id": 1,

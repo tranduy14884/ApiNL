@@ -112,7 +112,19 @@ server.post("/api/auth/login", (req, res) => {
       }
     });
 });
-
+//set count for products do pagination
+server.get("/api/products/counts", (req, res) =>{
+  const urlGetApi = "http://localhost:3000/api/products";
+  fetch(urlGetApi)
+  .then((todo) => todo.json())
+  .then((data) => {
+    let count = 0;
+    const user = data.map(
+      (item) => count++
+    );
+    res.jsonp(count);
+  });
+})
 
 
 // Use default router
