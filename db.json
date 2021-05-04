@@ -89,7 +89,8 @@
       "number" : 1,
       "oldPrice" : 850000,
       "discount" : 0.4,
-      "thumnailUrl" : "https://statics2.vntrip.vn/165x165/data-v2/hotels/12536/img_max/12536_1528344910_sup_1.jpg"
+      "thumnailUrl" : "https://statics2.vntrip.vn/165x165/data-v2/hotels/12536/img_max/12536_1528344910_sup_1.jpg",
+      "day" : 1
     },
     {
       "id" : 2,
@@ -98,7 +99,8 @@
       "number" : 2,
       "oldPrice" : 1500000,
       "discount" : 0.4,
-      "thumnailUrl" : "https://statics2.vntrip.vn/165x165/data-v2/hotels/12536/img_max/12536_1611041843_suite1.jpg"
+      "thumnailUrl" : "https://statics2.vntrip.vn/165x165/data-v2/hotels/12536/img_max/12536_1611041843_suite1.jpg",
+      "day" : 1
     }
   ]
   ,
