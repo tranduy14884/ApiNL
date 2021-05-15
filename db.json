@@ -80,6 +80,13 @@
       "description": "Khách sạn Imperial nổi bật với sự hòa quyện hoàn hảo giữa lối kiến trúc cổ điển, sang trọng và phong cách phục vụ hiếu khách. Xây dựng 26 tầng gồm 143 phòng với trang thiết bị hiện đại đạt tiêu chuẩn 4 sao, thiết kế các phòng đều có cửa sổ, ban công hướng ra biển và thành phố tạo nên không gian hoàn hảo, nơi du khách có thể tận hưởng cuộc sống thanh bình, cũng như đắm chìm vào khung cảnh của bãi biển thơ mộng và lưu giữ những khoảnh khắc đẹp của ánh bình minh ngay chính tại căn phòng của mình.Nằm ở tầng 2 của khách sạn, nhà hàng Royal là nơi quý khách tận hưởng những bữa tiệc buffet hay món ăn tự chọn đa dạng mang phong cách đặc trưng vùng miền. Khách sạn còn có bể bơi ngoài trời trên cao hiện đại, nhân viên phục vụ chu đáo và vô cùng hiếu khách."
     }
   ],
+  "admins": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "admin"
+    }
+  ],
   "orders": [
     {
       "id": 1,
@@ -89,13 +96,14 @@
       "hotelThumnail": "thumnailUrl",
       "hotelLocation": "location",
       "hotelName": "product.title",
-      "timeReceive": "currentTime",
+      "timeReceive": "10-05-2021",
       "roomName": " roomname",
       "roomNumber": 1,
       "numbeNight": 1,
       "price": 1330000,
-      "idRoom" : 1,
-      "idCustomer" : 1
+      "idRoom": 1,
+      "idCustomer": 0,
+      "idProduct": 1
     }
   ],
   "rooms": [

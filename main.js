@@ -112,6 +112,36 @@ server.post("/api/auth/login", (req, res) => {
       }
     });
 });
+//Login admin
+server.post("/api/admins/login", (req, res) => {
+  //get data
+  const useMail = req.body.email;
+  const usePassword = req.body.password;
+  // res.jsonp(useName);
+  const urlGetApi = "http://localhost:3000/api/admins";
+  fetch(urlGetApi)
+    .then((data) => data.json())
+    .then((listData) => {
+      const checkUser = listData.find((item) => {
+        return (item.email === useMail) && (item.password === usePassword)
+      });
+      // res.jsonp(checkUser);
+      if (checkUser) {
+        //get data to show
+        fetch(urlGetApi)
+          .then((todo) => todo.json())
+          .then((data) => {
+            const admin = data.find(
+              (item) => item.email === useMail
+            );
+            const accessToken = jwt.sign(admin,process.env.ACCESS_TOKEN_SECRET, {});
+            res.jsonp({ jwt: accessToken, admin });
+          });
+      } else {
+        res.status(400).json({ error: 'Email or password are wrong!' });
+      }
+    });
+});
 //set count for products do pagination
 server.get("/api/products/counts", (req, res) =>{
   const urlGetApi = "http://localhost:3000/api/products";
